@@ -1,0 +1,147 @@
+
+body{
+  background-image: url(../img/texture.jpg);
+}
+
+h1{
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+}
+
+
+
+
+.pointer{
+  cursor: pointer;
+}
+
+.modal{
+  display: block;
+}
+
+.phone-block{
+  height: 36px;
+}
+
+.col3{
+  padding-right: 0;
+}
+
+.col-md-4 h5{
+  font-size: 40px;
+  color: white;
+}
+
+.col-md-4 ul{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+
+.phone-block p{
+  color: rgb(255, 255, 255);
+}
+
+
+
+/*Animations*/
+
+/* *-enter */  /* *-leave */ 
+/* *-enter-active */ /* *-leave-active */
+/* *-enter-to */ /* *-leave-to */
+
+
+
+
+.phone-enter-active, .phone-leave-active{
+  transition: all 1s !important;
+}
+
+.phone-enter, .phone-leave-to{
+  transform: translateX(50px) !important;
+  opacity: 0 !important;
+}
+
+.modal-enter-active, .modal-leave-active{
+  transition: all 5s !important;
+}
+
+.modal-enter, .modal-leave-to{
+  transform: translateY(-100px) !important;
+}
+
+
+.fade-enter-active{
+  animation: .75s fade forwards;
+}
+
+
+.fade-enter, .fade-leave-to{
+  opacity: 0 !important;
+}
+
+@keyframes fade{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: .5;
+  }
+ 
+}
+
+
+/* @media */
+
+@media(max-width: 1200px){
+  
+  .custom_buttons{
+font-size: 12px;
+  }
+  
+}
+
+
+@media(max-width: 1003px){
+
+.container{
+  max-width: 100%;
+}
+
+  .col-md-4 h5{
+    font-size: 30px;
+   
+  }
+  
+  .custom_buttons{
+margin-bottom: 10px;
+  }
+  .btn-pr{
+   padding: 7px 45px;
+  }
+}
+
+
+@media(max-width: 768px){
+
+  .col-md-4 h5{
+    font-size: 30px;
+   
+  }
+  
+  .col-md-8{
+padding-left: 10px !important;
+  }
+  
+
+.col-md-4  h5 {
+  text-align: center;
+}
+
+.custom_buttons{
+  margin-left: 10px;
+  font-size: 20px;
+    }
+
+}
